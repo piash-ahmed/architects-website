@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    background-color: rgb(255, 244, 231);
+    background-color: rgb(255, 241, 224);
     padding: 45px 0;
 }
 
@@ -160,6 +160,7 @@ body {
 
 .facts-header h3 {
     font-size: 45px;
+    font-weight: 600;
     margin-bottom: 24px;
 }
 
@@ -207,6 +208,55 @@ body {
     color: #727272;
 }
 
+/* Sponsors Section */
+.sponsors-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding-top: 50px;
+}
+.sponsors-content{
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.sponsors-content h3{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.sponsors-content p{
+    font-size: 16px;
+    color: #727272;
+}
+
+.sponsors-images{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    margin-bottom: 130px;
+}
+.sponsors-images img{
+    filter: grayscale(100%);
+}
+/* Footer */
+.footer{
+    background-color: rgb(255, 241, 224);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+.footer p{
+    font-size: 20px;
+    color: #727272;
+    text-align: center;
+}
+
+
+
+
 /* Media Quary fon Mobile */
 @media screen and (max-width: 576px) {
 
@@ -219,7 +269,7 @@ body {
     }
 
     .banner-content h1 {
-        font-size: 36px;
+        font-size: 38px;
     }
 
     .banner-img {
@@ -229,12 +279,21 @@ body {
     .tems-features {
         grid-template-columns: repeat(1, 1fr);
     }
-
+    .features h3 {
+        font-size: 35px;
+    }
+    .our {
+        font-size: 35px;
+        font-weight: 600;
+    }
+    
     .some-facts {
         text-align: center;
         margin-top: 120px;
     }
-
+    .facts-header h3 {
+        font-size: 35px;
+    }
     .facts-header p {
         width: 75%;
         margin: 0 auto;
@@ -245,5 +304,20 @@ body {
         gap: 20px;
         padding: 25px;
     }
-    
+    .sponsors-content h3{
+        font-size: 35px;
+    }
+    .sponsors-content p{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .sponsors-images{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        gap: 50px;
+    }
+    .footer p{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
