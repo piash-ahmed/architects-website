@@ -1,68 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Work Sans", serif;
 }
 
-.main-container{
-    background-color: #ffead1;
-}
-/* Header */
-.header{
-    max-width: 1280px;
-    margin: 0 auto;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 10px;
-}
-.brand{}
-.brand h1{
-    font-size: 25px;
-    color: #131313;
-}
-.menu{
-}
-.menu ul{
-    display: flex;
-    gap: 50px;
-}
-.menu ul li{
-    list-style: none;
-}
-.menu ul li a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #424242;
-    font-weight: 450;
+.container {
+    background-color: rgb(255, 244, 231);
+    padding: 45px 0;
 }
 
-/* Banner */
-.banner-container{
-    margin-top: 100px;
-}
-.banner-content {
-    max-width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 50px;
-}
-.banner-content h1 {
-    font-size: 64px;
-    color: #131313;
-}
-.banner-content p{
-    font-size: 16px;
-    color: #727272;
-    margin: 30px 0;
-}
 .primary-btn {
     background-color: #ff900e;
     font-size: 16px;
@@ -71,8 +23,128 @@ body{
     border: none;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
+    transition: .5s ease all;
 }
-.banner-img{}
-.banner-img img{
+
+.primary-btn:hover {
+    background-color: #ce6e00;
+    letter-spacing: .5px;
+}
+
+/* Header */
+.header {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10px;
+}
+
+.brand h1 {
+    font-size: 25px;
+    color: #131313;
+}
+
+.menu ul {
+    display: flex;
+    gap: 50px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #424242;
+    font-weight: 400;
+    transition: .4s all;
+}
+
+.menu ul li a:hover {
+    color: #ff900e;
+    font-weight: 500;
+}
+
+/* Banner */
+.banner-container {
+    margin-top: 100px;
+}
+
+.banner-content {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-content h1 {
+    font-size: 64px;
+    color: #131313;
+}
+
+.banner-content p {
+    font-size: 16px;
+    color: #727272;
+    margin: 30px 0;
+}
+
+.banner-img img {
     width: 100%;
+}
+
+/* Teams and Features */
+.tems-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.teams {
+    margin: 85px 0;
+}
+
+.teams-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.teams-images img {
+    max-width: 100%;
+}
+
+.features {
+    margin-left: 73px;
+}
+
+.features h3 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.features p {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 32px;
+}
+
+.our {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.features-text {
+    color: #FF900E;
+    font-weight: 700;
 }
