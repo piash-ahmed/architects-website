@@ -42,7 +42,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 0 25px;
 }
 
 .brand h1 {
@@ -147,6 +147,78 @@ body {
     color: #FF900E;
     font-weight: 700;
 }
+
+/* Our Features Section */
+.features-container{
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex;
+    gap: 140px;
+    margin-bottom: 130px;
+}
+.features-header{
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.features-header h2{
+    font-size: 45px;
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+    margin-bottom: 24px;
+}
+.features-header p{
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 30px;
+}
+.features-card{
+    padding: 25px 10px;
+    border: #FF900E;
+    margin-bottom: 30px;
+}
+.features-card h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.features-card p{
+    font-size: 16px;
+    color: #727272;
+}
+.features-img{
+    width: 100%; 
+}
+.features-img img{
+}
+.badge{
+    background-color: #ff900e;
+    padding: 25px 20px;
+    width: 300px;
+    height: 165px;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: -80px;
+    margin-top: -100px;
+    display: inline-block;
+  }
+  .badge h2{
+      font-size: 50px;
+      font-weight: 600;
+      color: #fff;
+      margin: 15px 0 5px 0;
+  }
+  .badge p{
+      font-size: 18px;
+      color: #fff;
+  }
+  
+
+
+
+
+
+
+
 
 /* Some Facts Section*/
 .some-facts {
